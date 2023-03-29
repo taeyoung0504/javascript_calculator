@@ -4,30 +4,42 @@
 <link rel="stylesheet" href="main.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>계산기</title>
 </head>
 <body>
-<div id="container">
-    <div id="frame"> <!--컨텐츠 틀-->
-        <h1>simple Calculator</h1>
-        first num<br/>
-        <input type="text" id="num1"><br/>
-        second num<br/>
-        <input type="text" id="num2"><br/>
-        result<br/>
-        <div id="res"></div>
-        <!--<input type="text" id="result"><br/> -->
-        <br/>
-        <button id="plus">+</button>
-        <button id="minus">-</button>
-        <button id="multiplier">*</button>
-        <button id="divider">/</button>
-    </div>   
-    </div>
+<div calss="cal">
+<div id="form">
+<h1> Calculator</h1>
+<h5> made by. 태영</h5>
+<br>
+<input type="text" id="resultFld" placeholder="값을 입력하세요">
+<br>
+<br>
+<input type="button" value='1' onclick="btn(1)">
+<input type="button" value='2' onclick="btn(2)">
+<input type="button" value='3' onclick="btn(3)">
+<input type="button" value='+' onclick="cal('+')">
+<br>
+<input type="button" value='4' onclick="btn(4)">
+<input type="button" value='5' onclick="btn(5)">
+<input type="button" value='6' onclick="btn(6)">
+<input type="button" value='-' onclick="cal('-')">
+<br>
+<input type="button" value='7' onclick="btn(7)">
+<input type="button" value='8' onclick="btn(8)">
+<input type="button" value='9' onclick="btn(9)">
+<input type="button" value='*' onclick="cal('-')">
+<br>
+<input type="button" value='0' onclick="btn(0)">
+<input type="button" value='.' onclick="btn('.')">
+<input type="button" value='/' onclick="cal('/')">
+<input type="button" value='%' onclick="cal('%')">
+<br>
+<br>
+<input type="button" value='계산하기' onclick="result()">
+<input type="button" id='reset' value='초기화'>
 </div>
-
-
-
-<script src="operators.js"></script>
+</div>
 </body>
+<script src="cal.js"></script>
 </html>
